@@ -17,12 +17,12 @@ public class QuickSort {
         int start = low;
         int end = high;
         int mid = start + (end - start) / 2;
-        int midEle = arr[mid];
+        int pivot = arr[mid];
         while (start <= end) {
-            while (arr[start] < midEle) {
+            while (arr[start] < pivot) {
                 start++;
             }
-            while (arr[end] > midEle) {
+            while (arr[end] > pivot) {
                 end--;
             }
 
